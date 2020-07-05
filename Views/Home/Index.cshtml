@@ -1,0 +1,143 @@
+﻿@model ViewModels.HomeViewModel
+
+
+
+
+    <div class="container font-color-main">
+        <div class="row video-home">
+            <div class="col-md-3">
+                <div class="card shadow-sm opacity-dark">
+                    <h3 class="font-color-main">Feature Title</h3>
+                    <img class="home-image" src="/images/stellaris.jpg" alt="CoverImage">
+                </div>
+
+                <div class="card-body opacity-dark">
+                    <p>Release: 2017</p>
+                    <p>Publisher: Paradox Interactive </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="btn font-color-main large-font">£30</p>
+
+                        <div class="shadow-sm">
+                            <a class="btn" asp-controller="ShoppingCart"
+                               asp-action="AddToShoppingCart"
+                               asp-route-TitleId="10">
+                                <p class="btn font-color-main large-font">Add To Cart</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-5 col-md-9 ">
+                <iframe class="justify-content-center " src="https://www.youtube.com/embed/Zh9yZNrb62U?autoplay=1">
+                </iframe>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+            <main role="main">
+
+
+                <div class="nav-scroller pt-5">
+                    <nav class="nav d-flex justify-content-md-between">
+                        <p>
+                        </p>
+                        <a class="btn" asp-controller="Home"
+                           asp-action="Index">
+
+                            <btn class="opacity-dark btn-dark font-color-main">
+                                <p>All Titles</p>
+                            </btn>
+                        </a>
+                        @foreach (var category in Model.Categories)
+                        {
+                            <a class="btn" asp-controller="Titles"
+                               asp-action="FilteredGrid" asp-route-categoryNumber="@category.CategoryId">
+
+                                <btn class="opacity-dark btn-dark">
+                                    <p class="font-color-main">@category.CategoryName</p>
+                                </btn>
+                            </a>
+                        }
+                        <p>
+                        </p>
+                    </nav>
+                </div>
+
+                @*<partial name="_Categories" model="Model.Categories" />*@
+
+            </main>
+
+
+            <div class="row">
+                <div class="album col-md-1">
+
+
+                    <div>
+                        <nav class="nav d-flex justify-content-md-around opacity-dark">
+                            <a class="btn" asp-controller="Home"
+                               asp-action="Index">
+
+                                <btn class="opacity-dark btn-dark  p-2">
+                                    <i class="fa fa-th-large fa-3x" aria-hidden="true"></i>
+                                </btn>
+                            </a>
+                            <a class="btn" asp-controller="Home"
+                               asp-action="IndexList">
+
+                                <btn class="opacity-dark btn-dark p-2">
+                                    <i class="fa fa-th-list fa-3x" aria-hidden="true"></i>
+                                </btn>
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="album col-md-11">
+
+
+                    <div class="row">
+                        @foreach (var title in Model.Titles)
+                        {
+
+
+                            <partial name="_TitleCard" model="title" />
+                        }
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

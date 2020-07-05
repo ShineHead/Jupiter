@@ -1,0 +1,20 @@
+﻿@model CategoryViewModel
+
+<li class="dropdown">
+    <a asp-controller="Pie"
+       asp-action="Index"
+       class="dropdown-toggle " data-toggle="dropdown">Categories<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+        @foreach (var category in Model.Categories)
+        {
+            <li>
+                <a asp-controller="Author" asp-action="FilteredList"
+                   asp-route-categoryNumber="@category.CategoryId">@category.CategoryName</a>
+            </li>
+        }
+        <li class="divider"></li>
+        <li>
+            <a asp-controller="Author" asp-action="QuoteList">View All</a>
+        </li>
+    </ul>
+</li>

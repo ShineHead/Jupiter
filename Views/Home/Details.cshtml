@@ -1,0 +1,20 @@
+﻿@model HomeViewModel
+
+
+
+
+    <div class="album pt-2 pb-2 row">
+        <div class="container font-color-main">
+            <h2 class="py-2">@Model.Title.Name</h2>
+            <partial name="_DetailsView" model="Model.Title" />
+
+        </div>
+    </div>
+
+
+    <section class="video-details container">
+
+        <iframe src=@Model.Title.videosource?autoplay=1>
+        </iframe>
+
+    </section>

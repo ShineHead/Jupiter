@@ -1,0 +1,132 @@
+﻿@model Order
+@* The asp-action  will direct to the Ceckout function within this controller*@
+
+
+
+<div class="col-6 font-color-main pb-4">
+
+    <h4>This is a dummy website, and does not handle purchases or downloadable content.</h4>
+
+    <div>
+        <p>
+            This is a student project site. The site owner does not own any licenses, nor does this site enable the distribution of any content whatsoever.
+
+            No profits or exchanges of currency are made from this site. <br> The owner hopes you are able to enjoy the content of the site anyway, and encourages the legal purchase of the content listed.
+        </p>
+    </div>
+
+
+</div>
+
+
+<div class="row pt-3">
+
+
+    <div class="col-12">
+
+        <form asp-action="Checkout" method="post" class="form-horizontal font-color-main" role="form">
+            <h4>You're just one step away from downloading your Games.</h4>
+
+            <div asp-validation-summary="All" class="text-danger"></div>
+
+            @* asp-for renders the Model's quote property value *@
+            <div class="form-group">
+                <label asp-for="LastName" class="col-md-2 control-label"></label>
+                <div class="col-md-5">
+                    <input asp-for="LastName" class="form-control" />
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="FirstName" class="col-md-2 control-label"></label>
+                <div class="col-md-5">
+                    <input asp-for="FirstName" class="form-control" />
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="AddressLine1" class="col-md-2 control-label"></label>
+                <div class="col-md-5">
+                    <input asp-for="AddressLine1" class="form-control" />
+                    <span asp-validation-for="AddressLine1" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="AddressLine2" class="col-md-2 control-label"></label>
+                <div class="col-md-5">
+                    <input asp-for="AddressLine2" class="form-control" />
+                    <span asp-validation-for="AddressLine2" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ZipCode" class="col-md-2 control-label"></label>
+                <div class="col-md-5">
+                    <input asp-for="ZipCode" class="form-control" />
+                    <span asp-validation-for="ZipCode" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="City" class="col-md-2 control-label"></label>
+                <div class="col-md-5">
+                    <input asp-for="City" class="form-control" />
+                    <span asp-validation-for="City" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="State" class="col-md-2 control-label"></label>
+                <div class="col-md-5">
+                    <input asp-for="State" class="form-control" />
+                    <span asp-validation-for="State" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Country" class="col-md-2 control-label"></label>
+                <div class="col-md-5">
+                    <input asp-for="Country" class="form-control" />
+                    <span asp-validation-for="Country" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="PhoneNumber" class="col-md-2 control-label"></label>
+                <div class="col-md-5">
+                    <input asp-for="PhoneNumber" class="form-control" />
+                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Email" class="col-md-2 control-label"></label>
+                <div class="col-md-5">
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-5">
+                    <input type="submit" class="btn opacity-dark font-color-main" value="Complete order" />
+                </div>
+            </div>
+
+        </form>
+
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+

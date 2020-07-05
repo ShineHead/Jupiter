@@ -1,0 +1,197 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+
+
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/scifi_background.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+tr {
+    font-size: 1.3rem;
+}
+
+.large-font {
+    font-size: 1.3rem;
+}
+
+.card {
+/*    margin-left: 45px !important;
+    margin-right: 45px !important;*/
+}
+
+
+.searchbar {
+    width: 600px !important;
+    margin-left: 3rem;
+}
+
+.video-home iframe {
+    width: 100%;
+    height: 420px;
+    border: hidden;
+    border-radius: 4px;
+}
+
+.home-image {
+
+    height: 320px;
+    width: auto;
+ 
+
+}
+
+
+.home-feature{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.video-details iframe {
+    width: 100%;
+    height: 420px !important;
+    border: hidden;
+    border-radius: 4px;
+}
+
+
+
+a {
+    color: #c6ff00 !important;
+}
+
+
+btn :hover {
+    color: #c6ff00;
+    
+}
+
+
+.image-thumbnail {
+    height: 90px;
+    width: 90px;
+}
+
+
+.btn-card {
+    opacity: 1;
+}
+
+.btn-card :hover {
+    background-color: #8da927;
+    opacity: 1 !important;
+}
+
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #a6f4ff;
+}
+
+
+
+
+.font-color-main {
+    color: #c6ff00 !important;
+}
+
+.font-color-secondary {
+    color: #d0ff2c !important;
+}
+
+#background-render {
+
+}
+
+.metal_background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/images/metal_bg.jpg');
+    border-radius: 4px;
+}
+
+
+.carousel-image{
+    height: 360px !important;
+}
+
+
+.align-text-right{
+    text-align: right;
+
+}
+.opacity-dark {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+}
+
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}

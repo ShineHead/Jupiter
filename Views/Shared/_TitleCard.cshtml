@@ -1,0 +1,21 @@
+﻿
+
+
+@model Title
+
+    <div class="col-md-3 font-color-main pb-lg-5">
+        <div class="card btn-card opacity-dark">
+            <a class="btn" asp-controller="Home"
+               asp-action="Details"
+               asp-route-titleId="@Model.Id">
+                <img src="@Model.ImageThumbnailUrl" height="320" alt="CoverImage'">
+            </a>
+
+        </div>
+        <div class="card opacity-dark pb-2">
+            <h3 class="card-text text-center">@Model.Name</h3>
+        </div>
+        </div>
+
+
+

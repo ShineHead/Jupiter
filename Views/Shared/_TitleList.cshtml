@@ -1,0 +1,30 @@
+﻿
+
+
+@model Title
+
+
+
+
+        <tbody>
+            <tr>
+                <th scope="row" class="image-thumbnail">
+                    <a class="" asp-controller="Home"
+                       asp-action="Details"
+                       asp-route-titleId="@Model.Id"><img class="d-block w-100" src=@Model.ImageThumbnailUrl alt="@Model.ImageThumbnailUrl"></a>
+                </th>
+
+                <td>
+                    <a class="font-color-main" asp-controller="Home"
+                       asp-action="Details"
+                       asp-route-titleId="@Model.Id">@Model.Name</a>
+                </td>
+                <td>@Model.GameCategory</td>
+                <td>@Model.Publisher</td>
+                <td>@Model.ReleaseDate</td>
+                <td>@Model.UserRating</td>
+                <td>@Model.Price</td>
+            </tr>
+        </tbody>
+
+
