@@ -3,25 +3,16 @@
 
 @model Title
 
-
-
 <div class="row ">
     <div class="col-md-3">
         <div class="card shadow-sm opacity-dark">
-            <img src=@Model.ImageUrl height="360" alt="CoverImage">
-
-
-
+            <img src=@Model.ImageUrl class="details-image" height="360" alt="CoverImage">
         </div>
-
         <div class="card-body opacity-dark">
-
             <p class="">Release: @Model.ReleaseDate</p>
             <p>Publisher: @Model.Publisher</p>
             <div class="d-flex justify-content-between align-items-center">
-
                 <h3 class="btn font-color-main large-font">£@Model.Price</h3>
-
                 <div class="shadow-sm">
                     <a class="btn" asp-controller="ShoppingCart"
                        asp-action="AddToShoppingCart"
@@ -32,10 +23,6 @@
             </div>
         </div>
     </div>
-
-
-
-
 
     <div class="col-md-9 opacity-dark">
         <div>

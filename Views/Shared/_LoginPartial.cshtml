@@ -2,7 +2,6 @@
 
 @inject SignInManager<IdentityUser> SignInManager
 @inject UserManager<IdentityUser> UserManager
-
 @*<ul class="navbar-nav font-color-main">*@
 @if (SignInManager.IsSignedIn(User))
 {
@@ -17,11 +16,12 @@
 }
 else
 {
+
     <li class="large-font nav-item py-1 px-3 pl-3 pr-3">
-        <a class="font-color-main" asp-area="Identity" asp-page="/Account/Register">Register</a>
+        <a class="font-color-main" asp-area="Identity" asp-page="/Account/Login">Login</a>
     </li>
     <li class="large-font nav-item py-1 px-3 pl-3 pr-3">
-        <a class=" font-color-main"asp-area="Identity" asp-page="/Account/Login">Login</a>
+        <a class="font-color-main" asp-area="Identity" asp-page="/Account/Register">Register</a>
     </li>
 }
 @*</ul>*@
